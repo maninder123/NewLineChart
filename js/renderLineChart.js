@@ -157,7 +157,7 @@ d3.json("./data/electionData.json", function (data) {
                 .data([currentData])
                 .attr("d", line);
             svg.select("#text_id" + i).attr("transform", function (d) {
-                return "translate(" + xScale(currentData[currentData.length - 1].date) + "," + yScale(currentData[currentData.length - 1].rate) + ")";
+                return "translate(" + (xScale(currentData[currentData.length - 1].date)+20) + "," + yScale(currentData[currentData.length - 1].rate) + ")";
             }).text( currentData[currentData.length - 1].rate+"%"+"  "+data[i].name )
 
 
