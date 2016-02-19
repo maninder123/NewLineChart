@@ -1,20 +1,61 @@
 
-		.line {
-			fill: none;
-			stroke-width: 1px;
-		}
+.line {
+    fill: none;
+    stroke-width: 1px;
+}
 
-		.axis path {
-			stroke: black;
-			stroke-width: 1px;
-			fill: none;
-			shape-rendering: crispEdges;
-		}
+.axis path {
+    stroke: black;
+    stroke-width: 1px;
+    fill: none;
+    shape-rendering: crispEdges;
+}
+.y_axis path {
+   visibility: hidden;
+}
 
-		.tick line {
-			stroke: black;
-			stroke-width: 1px;
-		}
-        svg{
-            cursor: crosshair;
-        }
+.tick line {
+    stroke: "#CABABA";
+    stroke-width: 1px;
+}
+.tick text {
+    opacity: 0.5;
+}
+.dashed_line {
+    stroke: #3c3c3c;
+    stroke-width: 2px;
+    stroke-dasharray: .00001 4;
+    stroke-linecap: round;
+}
+svg{
+    cursor: crosshair;
+}
+.flag-bg {
+    fill:#EAD3D3;
+    
+
+}
+.flag {
+    fill-opacity: .1;
+    stroke:#890f0f;
+    stroke-width: 1px;
+}
+.chart-label {
+    font-weight: 700;
+    font-family: AtlasGrotesk,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    text-transform: none;
+}
+.label-percentage{
+    font-family: "DecimaMonoPro",monospace;
+    font-size: 16px;
+    fill: #3c3c3c;
+    font-weight: 700;
+}
+.label-cand{
+    font-family: AtlasGrotesk,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 700;
+    fill: #3c3c3c;
+}
