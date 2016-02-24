@@ -344,13 +344,9 @@ function mousemove() {
             return "translate(" + (xScale(currentData[currentData.length - 1].date) + 30) + "," + yScale(currentData[currentData.length - 1].rate) + ")";
         }).text("");
         svg.select("#text_id" + i).append("tspan").attr("class", "label-percentage")
-                .text(function (d) {
-                    return "   " + d.value.rate + "%";
-                });
+                .text(currentData[currentData.length - 1].rate + "%");
         svg.select("#text_id" + i).append("tspan").attr("class", "label-cand")
-                .text(function (d) {
-                    return " " + d.name;
-                });
+                .text(data[i].name);
 //                .text(currentData[currentData.length - 1].rate + "%" + "  " + data[i].name)
         svg.select(".bg-rect" + i).attr("transform", function (d) {
             return "translate(" + (xScale(currentData[currentData.length - 1].date) + 30) + "," + (yScale(currentData[currentData.length - 1].rate) - 10) + ")";
